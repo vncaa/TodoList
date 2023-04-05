@@ -14,6 +14,9 @@
 					<tr>
 						<td class="todos-column" scope="row">@t.Id</td>
 						<td class="todos-column">@t.Name</td>
+						<td class="buttons-column">
+							<input type="submit" value="Delete" onClick="deleteTodo(@t.Id)" />
+						</td>
 					</tr>
 				}
 			</tbody>
