@@ -91,7 +91,7 @@ namespace TodoList.Controllers
 		{
 			using (var connection = new SqliteConnection("data source=tododb.sqlite"))
 			{
-				using(var tableCmd = connection.CreateCommand())
+				using (var tableCmd = connection.CreateCommand())
 				{
 					connection.Open();
 					tableCmd.CommandText = $"UPDATE todo SET Name = '{todo.Name}' WHERE Id = '{todo.Id}'";
