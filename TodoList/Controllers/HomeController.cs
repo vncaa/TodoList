@@ -18,7 +18,7 @@ namespace TodoList.Controllers
             return View();
         }
 
-        public void Insert(TodoItem todo)
+        public RedirectResult Insert(TodoItem todo)
         {
             using(SqliteConnection connection = new SqliteConnection("data source=tododb.sqlite"))
             {
@@ -36,6 +36,7 @@ namespace TodoList.Controllers
                     }
                 }
             }
+            return Redirect("https://localhost:7253/");
         }
     }
 }
