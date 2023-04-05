@@ -1,12 +1,14 @@
 ﻿@model TodoViewModel
 
-
-		<table>
+<div class="row justify-content-center">
+	<div class="col-xl-6 col-lg-8 col-md-8 col-sm-10">
+		<table class="table">
 			<thead>
-				<tr>
+				<tr class="table-primary">
 					<th scope="col">Id</th>
 					<th scope="col">Name</th>
-				</tr>
+					<th scope="col"></th>
+				</trclass>
 			</thead>
 			<tbody>
 				@foreach (var t in Model.TodoList)
